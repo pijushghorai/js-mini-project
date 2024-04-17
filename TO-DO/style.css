@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
+  position: relative;
+}
+
+.todo-container {
+  background-color: #000000aa;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 8px;
+  padding: 30px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.input-container {
+  /* background-color: #8d0b93; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.input-container input{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.todo-add {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 6px;
+  margin-left: 5px;
+  font-size: 15px;
+  background-color: #ff057c;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.todo-add:hover {
+  background-color: #ee0073;
+}
+
+.todo-add:active {
+  background-color: #ff2c92;
+}
+
+.todo-list-container {
+  /* background-color: #ee0073; */
+  color: #ffffff;
+}
+
+.todo-list li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 35px;
+  user-select: none;
+  position: relative;
+}
+
+.todo-list li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  left: 0;
+  top: 29%;
+  cursor: pointer;
+}
+
+.todo-list li.mark {
+  color: #f5f5dc;
+  text-decoration: line-through;
+}
+
+.todo-list li.mark::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color:#ff3cac;
+  border: 5px solid #ffffff;
+  left: 0;
+  top: 29%;
+  cursor: pointer;
+}
+
+.message {
+  color: #ffffff;
+  text-align: center;
+  display: none;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.material-symbols-outlined:hover {
+  background-color: #ffffff3d;
+  border-radius: 50%;
+}

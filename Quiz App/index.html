@@ -7,22 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="quiz-container">
-        <div class="quiz-header">
-            <h1>Quiz App</h1>
-        </div>
-        <div class="quiz-body">
-            <div class="question">
-                <h2>What is the capital of France?</h2>
-                <ul class="ans-btn">
-                    <li><label><input type="radio" name="q1" value="a">a) Paris</label></li>
-                    <li><label><input type="radio" name="q1" value="b">b) Rome</label></li>
-                    <li><label><input type="radio" name="q1" value="c">c) Madrid</label></li>
-                    <li><label><input type="radio" name="q1" value="d">d) Madrid</label></li>
-                </ul>
-            </div>
-            <button class="next-btn">Next</button>
-        </div>
+    <div class="app-container">
+      <h1>Quiz</h1>
+      <div class="quiz-container">
+        <h2 id="question">
+          Question?
+            <button class="btn">Answer 01</button>
+            <button class="btn">Answer 02</button>
+            <button class="btn">Answer 03</button>
+            <button class="btn">Answer 04</button>
+        </h2>
+      </div>
+      <button id="next-btn">Next</button>
     </div>
 
     <script src="app.js"></script>

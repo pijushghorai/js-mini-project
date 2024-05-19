@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-.quiz-container {
+.app-container {
     width: 750px;
     margin: 30px auto;
     background-color: #ffffff;
@@ -23,59 +23,45 @@ body {
     padding: 20px;
 }
 
-.quiz-header h1 {
+.app-container h1 {
     text-align: center;
     color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
 }
 
-.question {
-    margin-bottom: 20px;
+.quiz-container {
+    padding: 20px 0;
 }
 
-.question h2 {
-    margin-bottom: 10px;
-    color: #333;
-    margin-top: 18px;
-    margin-bottom: 15px;
+#question {
+    font-size: 25px;
+    font-weight: 600;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+#ans-btn {
+    margin-top: 15px;
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-label {
-    display: block;
-    border: 1px solid #ccc;
-    padding: 10px;
+.btn {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 8px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #808080;
     cursor: pointer;
 }
 
-label:hover {
+.btn:hover {
     background-color: #f1f1f1;
-}
+} 
 
-input[type="radio"]:checked + label {
-    background-color: #fff;
-}
-
-input[type="radio"]:checked + label.correct {
-    background-color: #a0d468;
-}
-
-input[type="radio"]:checked + label.wrong {
-    background-color: #ed5565;
-}
-
-.next-btn {
+#next-btn {
     display: block;
     width: 100%;
     padding: 10px 20px;
@@ -85,8 +71,9 @@ input[type="radio"]:checked + label.wrong {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: none;
 }
 
-.next-btn:hover {
+#next-btn:hover {
     background-color: #0056b3;
 }

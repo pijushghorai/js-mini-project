@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #00203a;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  padding: 20px 80px;
+}
+
+.container h1 {
+    font-size: 45px;
+    color: #adff2f;
+    margin-bottom: 22px;
+}
+
+#password {
+    width: 100%;
+    padding: 18px 30px;
+    font-size: 20px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    margin: 20px 0;
+}
+
+#generate-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #adff2f;
+}
+
+#generate-btn:active {
+    background-color: #ffffff;
+}

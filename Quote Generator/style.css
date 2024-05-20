@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#00d2ff, #3a7bd5);
+    position: relative;
+    font-family: "Playfair Display", serif;
+}
+
+.quote-container {
+    background-color: #dff9fb;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
+.quote-container h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    position: relative;
+}
+
+.quote-container h1::after {
+    content: "";
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #7ed6df;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.quote-container blockquote {
+    font-size: 26px;
+    min-height: 118px;
+}
+
+.quote-container blockquote::before, .quote-container blockquote::after {
+    content: '"';
+} 
+
+.quote-container span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-container span::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-container .share-btn {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-container button {
+    border-radius: 20px;
+    width: 150px;
+    font-size: 15px;
+    padding: 12px;
+    margin: 5px;
+    background-color: #a1e7ef;
+    border: 1px solid #80808051;
+    cursor: pointer;
+}
+.quote-container button:hover {
+    background-color: #7ed9e3;
+}

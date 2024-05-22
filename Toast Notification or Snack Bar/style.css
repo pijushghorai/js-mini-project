@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #e7f2f4;
+  position: relative;
+}
+
+.btn {
+  width: 100%;
+  padding: 50px;
+}
+
+.btn button {
+  background-color: #1068eb;
+  color: white;
+  padding: 8px 30px;
+  margin: 0 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#toast-box {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.toast {
+  width: 400px;
+  height: 80px;
+  background-color: #ffffff;
+  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  padding: 8px 18px;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.2s linear forwards;
+}
+
+@keyframes moveleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.toast span {
+  font-size: 35px;
+  margin-right: 10px;
+  color: green;
+}
+
+.toast.error span {
+  color: #ff0000;
+}
+
+.toast.invalid span {
+  color: #ffa500;
+}
+
+.toast::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: green;
+  animation: bar 3s linear forwards;
+}
+
+.toast.toast.error::after {
+  content: "";
+  background: #ff0000;
+  animation: bar 3s linear forwards;
+}
+
+.toast.toast.invalid::after {
+  content: "";
+  background: #ffa500;
+  animation: bar 3s linear forwards;
+}
+
+@keyframes bar {
+  100% {
+    width: 0;
+  }
+}
